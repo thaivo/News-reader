@@ -3,7 +3,7 @@
 namespace Api\Newsreader;
 
 require_once "./vendor/autoload.php";
-class GNewsEndpoint
+abstract class GNewsEndpoint
 {
     public $searchText;
     public $lang;
