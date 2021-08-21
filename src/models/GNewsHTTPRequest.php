@@ -3,7 +3,7 @@
 namespace Api\Newsreader;
 use Api\Newsreader\GNewsEndpoint;
 
-require_once './vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 class GNewsHTTPRequest
 {
@@ -24,7 +24,7 @@ class GNewsHTTPRequest
     }
 
     public function createHTTPRequest(){
-        return $this->link.$this->gnews.$this.$this->apiToken;
+        return $this->link.$this->gnews->GetFilterString().'&token='.$this->apiToken;
     }
 
 }

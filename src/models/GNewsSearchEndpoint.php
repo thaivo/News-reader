@@ -6,7 +6,7 @@ class GNewsSearchEndpoint extends GNewsEndpoint
 {
     public $in;
     public $sortBy;
-
+    const SEARCH = 'search?';
     public function __construct($searchText, $lang, $country, $fromDate, $toDate, $in, $sortBy)
     {
         parent::__construct($searchText, $lang, $country, $fromDate, $toDate);
@@ -29,7 +29,7 @@ class GNewsSearchEndpoint extends GNewsEndpoint
             }
             $result .= 'sortBy='.$this->sortBy;
         }
-        return $result;
+        return self::SEARCH.$result;
     }
 
 }

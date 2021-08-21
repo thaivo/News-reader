@@ -60,7 +60,7 @@ abstract class GNewsEndpoint
             }
             $result .= 'to='.$this->toDate;
         }
-        return 'search?'.$result;
+        return $result;
     }
 
 }
