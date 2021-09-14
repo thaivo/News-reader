@@ -1,0 +1,17 @@
+{
+    "name": "api/newsreader",
+    "autoload": {
+        "psr-4": {
+            "Api\\Newsreader\\": "src/models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thaivo",
+            "email": "thai2903@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-curl": "*"
+    }
+}
